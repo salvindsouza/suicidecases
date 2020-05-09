@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--===============================================================================================-->
+	<!-- <link rel="icon" type="image/png" href="images/icons/favicon.ico"/> -->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animate/animate.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/css-hamburgers/hamburgers.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/animsition/css/animsition.min.css') }}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendor/select2/select2.min.css') }}">
+<!--===============================================================================================-->
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css"> -->
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/util.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form" action="{{ url_for('predict')}}"method="post">
+				<span class="contact100-form-title">
+					Prediction of Suicide case
+				</span>
+
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Country</span>
+					<div>
+						<select class="selection-2" name="country">
+							<option>Choose Country</option>
+							<option>Choose Country</option>
+							<option value=0>Albania</option>
+							<option value=1>Antigua and Barbuda</option>
+							<option value=2>Argentina</option>
+							<option value=3>Armenia</option>
+							<option value=4>Aruba</option>
+							<option value=5>Australia</option>
+							<option value=6>Austria</option>
+							<option value=7>Azerbaijan</option>
+							<option value=8>Bahamas</option>
+							<option value=9>Bahrain</option>
+							<option value=10>Barbados</option>
+							<option value=11>Belarus</option>
+							<option value=12>Belgium</option>
+							<option value=13>Belize</option>
+							<option value=14>Bosnia and Herzegovina</option>
+							<option value=15>Brazil</option>
+							<option value=16>Bulgaria</option>
+							<option value=17>Cabo Verde</option>
+							<option value=18>Canada</option>
+							<option value=19>Chile</option>
+							<option value=20>Colombia</option>
+							<option value=21>Costa Rica</option>
+							<option value=22>Croatia</option>
+							<option value=23>Cuba</option>
+							<option value=24>Cyprus</option>
+							<option value=25>Czech Republic</option>
+							<option value=26>Denmark</option>
+							<option value=27>Dominica</option>
+							<option value=28>Ecuador</option>
+							<option value=29>El Salvador</option>
+							<option value=30>Estonia</option>
+							<option value=31>Fiji</option>
+							<option value=32>Finland</option>
+							<option value=33>France</option>
+							<option value=34>Georgia</option>
+							<option value=35>Germany</option>
+							<option value=36>Greece</option>
+							<option value=37>Grenada</option>
+							<option value=38>Guatemala</option>
+							<option value=39>Guyana</option>
+							<option value=40>Hungary</option>
+							<option value=41>Iceland</option>
+							<option value=42>Ireland</option>
+							<option value=43>Israel</option>
+							<option value=44>Italy</option>
+							<option value=45>Jamaica</option>
+							<option value=46>Japan</option>
+							<option value=47>Kazakhstan</option>
+							<option value=48>Kiribati</option>
+							<option value=49>Kuwait</option>
+							<option value=50>Kyrgyzstan</option>
+							<option value=51>Latvia</option>
+							<option value=52>Lithuania</option>
+							<option value=53>Luxembourg</option>
+							<option value=54>Macau</option>
+							<option value=55>Maldives</option>
+							<option value=56>Malta</option>
+							<option value=57>Mauritius</option>
+							<option value=58>Mexico</option>
+							<option value=59>Montenegro</option>
+							<option value=60>Netherlands</option>
+							<option value=61>New Zealand</option>
+							<option value=62>Nicaragua</option>
+							<option value=63>Norway</option>
+							<option value=64>Oman</option>
+							<option value=65>Panama</option>
+							<option value=66>Paraguay</option>
+							<option value=67>Philippines</option>
+							<option value=68>Poland</option>
+							<option value=69>Portugal</option>
+							<option value=70>Puerto Rico</option>
+							<option value=71>Qatar</option>
+							<option value=72>Republic of Korea</option>
+							<option value=73>Romania</option>
+							<option value=74>Russian Federation</option>
+							<option value=75>Saint Kitts and Nevis</option>
+							<option value=76>Saint Lucia</option>
+							<option value=77>Saint Vincent and Grenadines</option>
+							<option value=78>San Marino</option>
+							<option value=79>Serbia</option>
+							<option value=80>Seychelles</option>
+							<option value=81>Singapore</option>
+							<option value=82>Slovakia</option>
+							<option value=83>Slovenia</option>
+							<option value=84>South Africa</option>
+							<option value=85>Spain</option>
+							<option value=86>Sri Lanka</option>
+							<option value=87>Suriname</option>
+							<option value=88>Sweden</option>
+							<option value=89>Switzerland</option>
+							<option value=90>Thailand</option>
+							<option value=91>Trinidad and Tobago</option>
+							<option value=92>Turkey</option>
+							<option value=93>Turkmenistan</option>
+							<option value=94>Ukraine</option>
+							<option value=95>United Arab Emirates</option>
+							<option value=96>United Kingdom</option>
+							<option value=97>United States</option>
+							<option value=98>Uruguay</option>
+							<option value=99>Uzbekistan</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Gender</span>
+					<div>
+						<select class="selection-2" name="sex">
+							<option>Choose Gender</option>
+							<option value="0">Female</option>
+							<option value="1">Male</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Age</span>
+					<div>
+						<select class="selection-2" name="age">
+							<option>Choose Age</option>
+							<option value="3">5-14</option>
+							<option value="0">15-24</option>
+							<option value="1">25-34</option>
+							<option value="2">35-54</option>
+							<option value="4">55-74</option>
+							<option value="5">75+</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">Population</span>
+					<input class="input100" type="text" autocomplete="off" name="population" placeholder="278 - 20273920" required>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">GDP for Year (USD)</span>
+					<input class="input100" type="text" autocomplete="off" name="gdp_for_year_usd" placeholder="46919620 - 16155260000000" required>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 validate-input">
+					<span class="label-input100">GDP for Capita (USD)</span>
+					<input class="input100" type="text" autocomplete="off" name="gdp_per_capita_usd" placeholder="251 - 126352" required>
+					<span class="focus-input100"></span>
+				</div>
+				
+				<div class="wrap-input100 input100-select">
+					<span class="label-input100">Generation</span>
+					<div>
+						<select class="selection-2" name="generation">
+							<option>Choose Generation</option>
+							<option value="0">Boomers</option>
+							<option value="1">G.I generation</option>
+							<option value="2">Generation X</option>
+							<option value="3">Generation Z</option>
+							<option value="4">Millennial's</option>
+							<option value="5">Silent</option>
+						</select>
+					</div>
+					<span class="focus-input100"></span>
+				</div>
+			
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn" type = "submit">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+{{ url_for('static', filename='') }}
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/animsition/js/animsition.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/popper.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/select2/select2.min.js') }}"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/daterangepicker/moment.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='vendor/daterangepicker/daterangepicker.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='vendor/countdowntime/countdowntime.js') }}"></script>
+<!--===============================================================================================-->
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
